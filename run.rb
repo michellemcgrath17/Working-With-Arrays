@@ -9,6 +9,7 @@ end
 
 get '/years' do
 
+@years = (1994..2016).to_a
 
 
   # code!
@@ -16,6 +17,11 @@ get '/years' do
 end
 
 get '/states' do
+
+  @states = ["North Carolina", "Maryland", "Tennessee", "Indiana", "Flordia"]
+  @states.sort
+  @states.sort!
+  
   # code!
   erb :states, layout: :main
 end
