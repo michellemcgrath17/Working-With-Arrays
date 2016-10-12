@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Basic Login Form</title>
+  <link rel="stylesheet" type="text/css" href="forms.css">
+</head>
+<body>
+  <h1>Basic Login Form</h1>
+</body>
+
+<form id="userform">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="row">
+      <label for="user">User Name:</label>
+      <input type="text" id="user" size="15" name="Username">
+    </div>
+    <div class="row">
+      <label for="pword">Password:</label>
+      <input type="password" id="pword" size="23" name="Password">
+    </div>
+    <div class="row indented">
+    <ul class="inline checkbox-options">
+      <li>
+      <label for="rem">
+      <input type="checkbox" id="rem" value="Remember" name="Rem">
+        Remember me next time
+      </label>
+    </li>
+    </ul>
+    </div>
+    <div class="row actions">
+        <input class="action-button" type="submit" value="Login">
+    </div>
+    <div class="row indented">
+        Don't have an account? <a href="forms.html"> Register Here</a>
+    </div>
+  </fieldset>
+</form>
+
+</html>

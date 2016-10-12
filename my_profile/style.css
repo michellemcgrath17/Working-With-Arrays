@@ -1,0 +1,41 @@
+div{
+  border:0px;
+  padding:0px;
+  margin:0px;
+  float:left 100%;
+}
+body div #myHeader {
+    background-color: blue;
+    margin-bottom:10px;
+}
+body div #mySidebar{
+  background-color: grey;
+  padding:10px;
+  margin-left:10px;
+  width:25%;
+  float: right;
+}
+body div #mySidebar a:link {
+    text-decoration: none;
+}
+body div #mySidebar h2{
+  color:blue;
+}
+body div #myMain{
+  width:70%;
+  float:left;
+}
+body div #myMain #meImage{width:317px; height:563px; alt:"Michelle";
+float:left; margin-right:10px}
+body div #myMain #linking{
+  text-align:right;
+}
+body div #myFooter{
+  float:left;
+  width:100%;
+  text-align:center;
+  color:grey;
+  font-style:italic;
+  margin-top:10px;
+  border-top:thin solid grey;
+}

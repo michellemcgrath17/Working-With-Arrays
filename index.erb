@@ -1,0 +1,31 @@
+<% @animals.each do |animal| %>
+<%end%>
+
+#wrap block in conditonal element to see if there are slected animals before you try to put up selected animals
+#<%unless @ selected animals.empty?%>
+#block of stuff to do
+#then can do else and show text that there are no aminals and to check back soon
+#then if have one more animal and there is only 1 animal that is not featured
+#the random functionality works
+#but want it to look nicer, so can do:
+#<% @selected_animals.empty? || @selected_animals.size>=3 %>
+#so if empty don't do anything but if there are things and the size > 3 do the looping like normal
+#then add an else statement with elsif
+#say if there is any then not enough animals
+#<% elsif @selected_animals.any? %>
+#<p> Sorry. Not enough aniamls!</p>
+#<else>
+#<p> Sorry. No animals yet. </p>
+#<%end%>
+
+#now want to add a link
+#after </p> add <p><a href="">More about...</a></p>
+#between </p> and link part, then add
+#<% if animal[:url] %>
+#<p><a href="<%=animal[:url] %>">More about... <%= animal[:name] %></a></p>
+#now if no link, launch a google search
+#<p><a target=_blank href="<%=animal.fetch[:url,"http://google.com?q=#{{animal[:name]}}") %>">More about... <%= animal[:name] %></a></p>
+#and you take away the part the says only do it if it is a url
+#this solves the problem for every animal in the system -> yay templates!
+#to go in and allow for an image to not be there..
+#<img src="<%= animal[:image].empty? ? "images/sad_panda.jpg" : "images/#{animal[:image]}" %>"

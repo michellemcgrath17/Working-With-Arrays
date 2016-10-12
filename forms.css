@@ -1,0 +1,95 @@
+/*
+	Basic form styles
+	add some rounded corners and font colors
+	restrict the form to 800px wide
+*/
+
+	form{
+		float:left;
+		width:800px;
+		background-color: #f2f2f2;
+		padding:10px;
+		border:2px solid #666;
+		border-radius: 6px
+	}
+
+	form h2{
+		color:#666;
+		font-size: 1.1em;
+		border-bottom: thin solid #666
+	}
+
+	legend{
+		color:#000066;
+		font-size:1.2em;
+	}
+
+	fieldset{
+		margin-bottom:20px;
+		width:600px;
+		border-radius: 4px
+	}
+
+
+	/*
+		Use divs for each row of inputs
+		Style the containing labels to be right aligned
+		If a row needs to be indented, use the indented class along with row to do so
+	*/
+	div.row{
+		float:left;
+		width:770px;
+		margin:4px 0px 8px 0px;
+		}
+
+	div.row label{
+		width:105px;
+		float:left;
+		text-align: right;
+		margin-right:10px;
+		}
+
+	div.row.indented{
+		margin-left:115px;
+		width:655px;
+		}
+
+	/*
+		list items should be used for checkbox and raio buttons
+		use these classes to align them within rows that are indented
+	*/
+
+	div.row.indented label, ul label{
+			width:100%;
+			float:left;
+			text-align:left;
+			}
+
+	div.row ul{
+		margin: 10px 0px 0px -40px;
+		}
+
+/* add an inline class to make the list items span a line and not be one per line*/
+	div.row ul.inline li {
+		float: left;
+	}
+
+	div.row ul.checkbox-options li, div.row ul.radio-options li {
+		list-style-type: none;
+		}
+
+	/*
+		The last row is for the submit button. use these extra classes to layout it out and style the submit button
+	*/
+	div.row.actions{
+		margin-top:10px;
+		text-align:center;
+		}
+
+	input.action-button{
+		font-size:1.2em;
+		padding:10px;
+		font-weight:bold;
+		color:#fff;
+		background-color: #000066
+		}

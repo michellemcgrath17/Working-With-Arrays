@@ -1,0 +1,204 @@
+<html>
+<head>
+  <title>Basic Signup Form</title>
+  <link rel="stylesheet" type="text/css" href="forms.css">
+</head>
+<body>
+  <h1>Basic Signup Form</h1>
+</body>
+
+<form id="userform">
+  <p> Already have an account? <a href="forms2.html">Login Here</a> </p>
+
+  <fieldset>
+    <legend>Account Login</legend>
+    <div class="row">
+      <label for="user">User Name:</label>
+      <input type="text" id="user" name="Username">
+    </div>
+    <div class="row">
+      <label for="pword">Password:</label>
+      <input type="password" id="pword" size ="40" name="Password">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Bio Information</legend>
+    <div class="row">
+      <label for="FN">First Name:</label>
+      <input type="text" id="FN" size="40" name="FirstName">
+    </div>
+    <div class="row">
+      <label for="LN">Last Name:</label>
+      <input type="text" id="LN" size="40" name="LastName">
+    </div>
+    <div class="row">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="Email">
+    </div>
+    <div class="row indented">
+      <label for="bio">Bio:</label>
+      <textarea name="Bio" id="bio"form="userform" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="row indented">
+       <label>Please indicate your gender...</label>
+      <ul class="inline radio-options">
+        <li>
+        <label for="male">
+        <input type="radio" id="male" value="male" name="gender">
+          Male
+        </label>
+        </li>
+        <li>
+        <label for="female">
+        <input type="radio" id="female" value="female" name="gender">
+          Female
+        </label>
+        </li>
+    </ul>
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Address</legend>
+    <div class="row">
+      <label for="street">Street:</label>
+      <input type="text" id="street" size="75" name="Street">
+    </div>
+    <div class="row">
+      <label for="city">City:</label>
+      <input type="text" id="city" size="65" name="City">
+    </div>
+    <div class="row">
+      <label for="state">State:</label>
+      <select id="state" name="State">
+        <option>Alabama</option>
+        <option>Alaska</option>
+        <option>Arizona</option>
+        <option>Arkansas</option>
+        <option>California</option>
+        <option>Connecticut</option>
+        <option>Colorado</option>
+        <option>Delaware</option>
+        <option>Flordia</option>
+        <option>Georgia</option>
+        <option>Hawaii</option>
+        <option>Idaho</option>
+        <option>Illionis</option>
+        <option>Indiana</option>
+        <option>Iowa</option>
+        <option>Kansas</option>
+        <option>Kentucky</option>
+        <option>Louisiana</option>
+        <option>Maine</option>
+        <option>Maryland</option>
+        <option>Massachusetts</option>
+        <option selected="selected">Michigan</option>
+        <option>Minnesota</option>
+        <option>Mississippi</option>
+        <option>Missouri</option>
+        <option>Montana</option>
+        <option>Nebraska</option>
+        <option>Nevada</option>
+        <option>New Hampshire</option>
+        <option>New Jersey</option>
+        <option>New Mexico</option>
+        <option>New York</option>
+        <option>North Carolina</option>
+        <option>North Dakota</option>
+        <option>Ohio</option>
+        <option>Oklahoma</option>
+        <option>Oregon</option>
+        <option>Pennsylvania</option>
+        <option>Rhode Island</option>
+        <option>South Carolina</option>
+        <option>South Dakota</option>
+        <option>Tennessee</option>
+        <option>Texas</option>
+        <option>Utah</option>
+        <option>Vermont</option>
+        <option>Washington</option>
+        <option>West Virginia</option>
+        <option>Wisconsin</option>
+        <option>Wyoming</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="zip">Zip Code:</label>
+      <input type="number" id="zip" size="10" name="zipcode">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Interests</legend>
+    <h2>Arts</h2>
+      <label>Please indicate any of the arts you are interested in.</label>
+    <div class="row indented">
+    <ul class="checkbox-options">
+      <li>
+        <label for="music">
+        <input type="checkbox" name="art" id="music" value="Music">
+        Music
+        </label>
+      </li>
+      <li>
+        <label for="film">
+        <input type="checkbox" name="art" id="film" value="Film">
+        Film
+        </label>
+      </li>
+      <li>
+        <label for="lit">
+        <input type="checkbox" name="art" id="lit" value="Lit">
+        Literature
+        </label>
+      </li>
+      <li>
+        <label for="theatre">
+        <input type="checkbox" name="art" id="theatre" value="Theatre">
+        Theatre
+        </label>
+      </li>
+    </ul>
+    </div>
+
+    <h2>Technology</h2>
+    <label>Please indicate any of the following technologies you are interested in.</label>
+    <div class="row indented">
+    <ul class="checkbox-options">
+      <li>
+        <label for="sph">
+        <input type="checkbox" name="tech" id="sph" value="SmartPh">
+        Smart Phones
+        </label>
+      </li>
+      <li>
+        <label for="wd">
+        <input type="checkbox" name="tech" id="wd" value="WebDev">
+        Web Development
+        </label>
+      </li>
+      <li>
+        <label for="gc">
+        <input type="checkbox" name="tech" id="gc" value="GameCon">
+        Gaming Consoles
+        </label>
+      </li>
+      <li>
+        <label for="sl">
+        <input type="checkbox" name="tech" id="sl" value="SmartLight">
+        "Smart" Lightswitches
+        </label>
+      </li>
+    </ul>
+    </div>
+  </fieldset>
+
+  <div class="row actions">
+      <input class="action-button" type="submit" value="Create Account">
+  </div>
+
+</form>
+</html

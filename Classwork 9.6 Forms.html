@@ -1,0 +1,58 @@
+<form action="response.html" method="post">
+<fieldset>
+<legend>Personal info</legend>
+<p>
+<label>
+First Name:
+<input type="text" name="first_name" value="John">
+</label>
+</p>
+
+<p>
+<label>
+Last Name:
+<input type="text" name="last_name" value="Doe">
+</label>
+</p>
+
+<p>
+<label>
+Password:
+<input type="password" name="password" value="">
+</label>
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Address info</legend>
+<p> Street Address: <br>
+  <textarea name="street" id="" cols="50" rows="3"></textarea>
+</p>
+
+
+<label for id="state-select">Your state:</label>
+<select id="state-select" name="state">
+<option value="MI">Michigan</option>
+<option value="IN">Indiana</option>
+<option>California</option>
+</select>
+</fieldset>
+
+<p>
+  Select one of the following:
+  <input type="checkbox" name="any_color" value="Green">Green
+  <input type="checkbox" name="any_color" value="Red">Red
+  <input type="checkbox" name="any_color" value="Blue">Blue
+</p>
+
+<p>
+  Select one of the following:
+  <label><input type="radio" name="color" value="Green">Green</label>
+  <label><input type="radio" name="color" value="Red">Red</label>
+  <label><input type="radio" name="color" value="Blue">Blue</label>
+</p>
+
+<input type="submit" name="submit" value="Please Press Me!">
+
+</form>
